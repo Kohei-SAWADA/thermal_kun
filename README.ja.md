@@ -1,3 +1,34 @@
+# thermal kun
+
+<p align="right">
+  <a href="README.md">English</a> |
+  <strong>日本語</strong>
+</p>
+
+**MacのCPU温度をリアルタイムで確認。**
+
+CPU温度・CPU/GPU使用率・メモリ・最近の温度履歴を、コンパクトなネイティブのデスクトップパネルで確認できます。
+
+**[macOS版をダウンロード（Apple Silicon）](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [導入ガイド](docs/INSTALL.ja.md) · [デモ](#デモ)
+
+macOS 13以降。配布アプリはApple Silicon専用で、Intel Macは非対応です。アドホック署名・未公証です。
+
+## デモ
+
+[Macでの実操作デモを見る（MP4）](assets/promo/thermal-kun-demo.mp4)
+
+![thermal kunの実測値と表示切替の実操作](assets/promo/thermal-kun-demo.gif)
+
+M3 Mac上の実際の1.0.4アプリを収録しています。`SMC · E-ZONE MEAN`は取得できる効率領域3センサーの平均で、CPU最高温度ではありません。Thermal StateはOSの熱状態で、スロットリング率ではありません。値は収録時の負荷を反映します。
+
+## 主な機能
+
+- CPU温度・CPU/GPU使用率・使用メモリとメモリ圧力の実測表示。
+- compact/detail、最近の履歴、Dark/Light/Systemの外観。
+- 移動・サイズ変更できるパネルと、ローカルの読み取り専用計測。
+
+[詳しい機能](#機能) · [必要環境](#必要環境) · [計測の意味](#データソースと表示の意味)
+
 <p align="center">
   <img src="assets/thermal-kun-thumbnail.png" alt="thermal kun — CPU temperature and system telemetry" width="100%">
 </p>
@@ -6,12 +37,8 @@
   <img src="assets/thermal-kun-icon.png" alt="thermal kun thermometer icon" width="128">
 </p>
 
-<p align="right">
-  <a href="README.md">English</a> |
-  <strong>日本語</strong>
-</p>
 
-# thermal kun
+
 
 CPU温度とシステムの熱状態を、デスクトップでひと目確認するための小さなmacOSアプリです。Swift／SwiftUI／AppKitで実装した正方形の常駐パネルに、CPU温度、CPU／GPU使用率、メモリを表示します。アプリ内の表示はすべて英語です。
 
