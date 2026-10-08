@@ -1,0 +1,32 @@
+# ビルド成果物・ローカル配布物
+.build/
+.swiftpm/
+build/
+dist/
+release-artifacts/
+DerivedData/
+*.app/
+*.xcarchive/
+*.dSYM/
+*.zip
+
+# 実機の記録・個人環境
+Evidence/
+.DS_Store
+._*
+.env
+.env.*
+*.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+.codex/
+.claude/
+.vscode/
+
+# ローカルの編集・Xcode設定
+xcuserdata/
+*.xcuserstate
+*.swp
+*~
