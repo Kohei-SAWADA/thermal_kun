@@ -49,6 +49,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMe
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
         testing = CommandLine.arguments.contains("--ui-test")
+        if !testing && !CommandLine.arguments.contains("--export-assets") {
+            login.initialize(existingInstallation: UserDefaults.standard.persistentDomain(forName: Bundle.main.bundleIdentifier ?? "")?.isEmpty == false)
+        }
         installMenu()
         createPanel()
         state.settingsDidChange = { [weak self] old, new in self?.applySettings(old: old, new: new) }

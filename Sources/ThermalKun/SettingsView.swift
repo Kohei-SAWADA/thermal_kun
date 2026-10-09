@@ -2,29 +2,6 @@ import AppKit
 import ServiceManagement
 import SwiftUI
 
-@MainActor
-final class LoginService: ObservableObject {
-    @Published var enabled = false
-    @Published var message = ""
-    func refresh() {
-        enabled = SMAppService.mainApp.status == .enabled || SMAppService.mainApp.status == .requiresApproval
-        if SMAppService.mainApp.status == .requiresApproval {
-            message = "Approval required in System Settings > General > Login Items."
-        } else if SMAppService.mainApp.status == .notFound {
-            message = "Keep this app in Applications before enabling Launch at Login."
-        } else { message = "" }
-    }
-    func setEnabled(_ value: Bool) {
-        do {
-            if value { try SMAppService.mainApp.register() } else { try SMAppService.mainApp.unregister() }
-            refresh()
-        } catch {
-            refresh()
-            message = "Could not update Launch at Login. Move the app to Applications and try again."
-        }
-    }
-}
-
 struct SettingsView: View {
     @ObservedObject var state: AppState
     @ObservedObject var login: LoginService
@@ -92,6 +69,7 @@ struct SettingsView: View {
         .tint(accent)
         .environment(\.locale, Locale(identifier: "en_US"))
         .onAppear { login.refresh() }
+        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in login.refresh() }
     }
     private func source(_ title: String, _ reading: MetricReading) -> some View {
         VStack(alignment: .leading, spacing: 3) {

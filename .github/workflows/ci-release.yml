@@ -1,0 +1,45 @@
+name: Build, check and release
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  mac:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./Scripts/check.sh
+      - run: ./Scripts/check-login.sh
+      - run: ./Scripts/build.sh
+      - run: ./Scripts/package-release.sh
+      - name: Verify archive
+        run: |
+          archive=$(find dist -name '*.zip' -print -quit)
+          (cd dist && shasum -a 256 -c "$(basename "$archive").sha256")
+          ditto -x -k "$archive" "$RUNNER_TEMP/verify"
+          codesign --verify --strict "$RUNNER_TEMP/verify/$(basename "$archive" .zip)/thermal kun.app"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: thermal-macos
+          path: dist/*
+          if-no-files-found: error
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: mac
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: thermal-macos
+          path: dist
+      - name: Publish only a new version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.0.5 >/dev/null 2>&1; then exit 0; fi
+          gh release create v1.0.5 dist/* --target "$GITHUB_SHA" --title 'thermal kun 1.0.5 — Login startup' --notes-file docs/release-notes-v1.0.5.md --latest
