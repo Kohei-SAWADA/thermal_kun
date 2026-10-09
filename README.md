@@ -9,13 +9,11 @@
 
 Keep CPU temperature, CPU/GPU usage, memory, and recent temperature history visible in a compact native desktop panel.
 
-**[Download for macOS (Apple Silicon)](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [Installation guide](docs/INSTALL.md) · [Demo](#demo)
+**[Download for macOS (Apple Silicon)](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [Installation guide](docs/INSTALL.md) · [GIF demo](#demo)
 
 macOS 13+; the release app is Apple Silicon only and does not support Intel Macs. Ad-hoc signed and not notarized.
 
 ## Demo
-
-[Watch the real Mac demo (MP4)](assets/promo/thermal-kun-demo.mp4)
 
 ![Live thermal kun readings and actual display controls](assets/promo/thermal-kun-demo.gif)
 

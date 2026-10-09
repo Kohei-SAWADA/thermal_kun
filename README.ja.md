@@ -9,13 +9,11 @@
 
 CPU温度・CPU/GPU使用率・メモリ・最近の温度履歴を、コンパクトなネイティブのデスクトップパネルで確認できます。
 
-**[macOS版をダウンロード（Apple Silicon）](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [導入ガイド](docs/INSTALL.ja.md) · [デモ](#デモ)
+**[macOS版をダウンロード（Apple Silicon）](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [導入ガイド](docs/INSTALL.ja.md) · [GIFデモ](#デモ)
 
 macOS 13以降。配布アプリはApple Silicon専用で、Intel Macは非対応です。アドホック署名・未公証です。
 
 ## デモ
-
-[Macでの実操作デモを見る（MP4）](assets/promo/thermal-kun-demo.mp4)
 
 ![thermal kunの実測値と表示切替の実操作](assets/promo/thermal-kun-demo.gif)
 
