@@ -169,3 +169,12 @@ Temperature access uses the undocumented AppleSMC driver interface in read-only 
 See the [installation guide](docs/INSTALL.md), [Japanese installation guide](docs/INSTALL.ja.md), [build and release guide (Japanese)](docs/RELEASING.md), and [changelog (Japanese)](CHANGELOG.md).
 
 MIT licensed; see [LICENSE](LICENSE). AppleSMC structure and sensor-key research references [Stats](https://github.com/exelban/stats); the required notices are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Apple documentation: [ProcessInfo.thermalState](https://developer.apple.com/documentation/foundation/processinfo/thermalstate-swift.property) and [SMAppService](https://developer.apple.com/documentation/servicemanagement/smappservice).
+
+
+### Login startup
+
+Fresh installations enable login startup once, after the macOS app is moved to `/Applications` or `~/Applications`. Change **Launch at Login** in Settings at any time. Existing app settings and OS-disabled login items are preserved during upgrades; legacy installs with no startup entry stay off because an old explicit off cannot be distinguished from never having enabled it. Registration is not repeated on every launch or usage refresh.
+
+macOS uses `SMAppService.mainApp`. Settings reports the actual OS status, pending approval, or failure. If the OS blocks startup, approve it in macOS **General > Login Items** yourself; the app does not bypass OS controls or request administrator access. Replace upgrades at the same location. An enabled installation moved to another permanent location repairs its existing registration once; disabled items stay disabled. Before moving an older version, turn startup off at the old location.
+
+Logout/login have not been tested for this change. Automated checks use isolated registration backends and reconstructed saved preferences; they do not log you out or modify your real startup items.

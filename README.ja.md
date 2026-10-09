@@ -167,3 +167,12 @@ CPU温度はCPU全体の最高温度を保証するものではありません�
 インストールは [日本語ガイド](docs/INSTALL.ja.md)／[English guide](docs/INSTALL.md)、ビルドとリリースは [docs/RELEASING.md](docs/RELEASING.md)、変更履歴は [CHANGELOG.md](CHANGELOG.md) を参照してください。
 
 MITライセンスです。詳細は [LICENSE](LICENSE) を参照してください。AppleSMCの構造とセンサーキーの調査には [Stats](https://github.com/exelban/stats) を参考にしており、必要な著作権表示と条件は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) に保持しています。Apple公式資料: [ProcessInfo.thermalState](https://developer.apple.com/documentation/foundation/processinfo/thermalstate-swift.property)、[SMAppService](https://developer.apple.com/documentation/servicemanagement/smappservice)。
+
+
+### ログイン時の自動起動
+
+新規インストールでは、macOS のアプリを `/Applications` または `~/Applications` に移動して起動した時点で一度だけ登録します。設定の **Launch at Login** でオン・オフを変更できます。更新時は既存の設定と OS 側の無効化を保持します。旧版でログイン項目がない場合は、明示的にオフにしたか未設定かを判別できないためオフを維持します。起動や使用量更新のたびに再登録しません。
+
+macOS は `SMAppService.mainApp`を使用します。設定には OS の状態・承認待ち・失敗を表示します。必要な承認は macOS の **一般 > ログイン項目** で行ってください。アプリは OS の制限を回避せず、管理者権限も要求しません。更新は同じ保存先で置換してください。有効なアプリを別の継続利用する保存先へ移した場合だけ既存の登録を一度更新し、無効な項目は無効のまま保持します。旧版を移動する前には古い保存先で自動起動をオフにしてください。
+
+今回の変更でログアウト・ログインは検証していません。自動テストは隔離した登録処理と保存設定の再読み込みを使用し、実際のログイン項目を変更しません。
