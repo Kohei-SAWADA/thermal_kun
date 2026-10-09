@@ -17,9 +17,9 @@ jobs:
       - name: Verify archive
         run: |
           archive=$(find dist -name '*.zip' -print -quit)
-          shasum -a 256 -c "$archive.sha256"
+          (cd dist && shasum -a 256 -c "$(basename "$archive").sha256")
           ditto -x -k "$archive" "$RUNNER_TEMP/verify"
-          codesign --verify --strict "$RUNNER_TEMP/verify/thermal-kun-macOS-arm64-v1.0.5/thermal kun.app"
+          codesign --verify --strict "$RUNNER_TEMP/verify/$(basename "$archive" .zip)/thermal kun.app"
       - uses: actions/upload-artifact@v4
         with:
           name: thermal-macos
