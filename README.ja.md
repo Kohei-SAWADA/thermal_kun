@@ -9,7 +9,7 @@
 
 CPU温度・CPU/GPU使用率・メモリ・最近の温度履歴を、コンパクトなネイティブのデスクトップパネルで確認できます。
 
-**[macOS版をダウンロード（Apple Silicon）](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [導入ガイド](docs/INSTALL.ja.md) · [GIFデモ](#デモ)
+**[macOS版をダウンロード（Apple Silicon）](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)** · [導入ガイド](docs/INSTALL.ja.md) · [GIFデモ](#デモ)
 
 macOS 13以降。配布アプリはApple Silicon専用で、Intel Macは非対応です。アドホック署名・未公証です。
 
@@ -44,10 +44,10 @@ CPU温度とシステムの熱状態を、デスクトップでひと目確認�
 
 ## ダウンロード
 
-現在のバージョンは **1.0.4（build 5）** です。Apple Silicon（`arm64`）用アプリを [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.4) からダウンロードできます。
+現在のバージョンは **1.0.6（build 7）** です。Apple Silicon（`arm64`）用アプリを [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6) からダウンロードできます。
 
-- [thermal kunのmacOS版をダウンロード](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)
-- [SHA-256チェックサム](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip.sha256)
+- [thermal kunのmacOS版をダウンロード](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)
+- [SHA-256チェックサム](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip.sha256)
 
 導入は [インストールガイド](docs/INSTALL.ja.md)、ソースビルドとZIPの作成は [リリース手順](docs/RELEASING.md) を参照してください。
 
@@ -82,7 +82,7 @@ CPU温度とシステムの熱状態を、デスクトップでひと目確認�
 - ドラッグ移動と、縦横1:1を保つサイズ変更。位置・サイズを保存し、画面構成変更時に補正
 - コンパクト／詳細表示、`Dark`／`Light`／`System` の切り替え
 - 通常はデスクトップの層に表示し、`Always on Top` で前面表示へ切り替え
-- メニューバーの `Show`／`Hide`、`Settings…`、`Quit thermal kun` と、任意の `Launch at Login`
+- メニューバーの `Show`／`Hide`、`Settings…`、`Quit thermal kun` と、設定で変更できる `Launch at Login`
 - 更新間隔は1／2／5／10秒から選択（初期値2秒）。短いアニメーションは無効化でき、システムの「視差効果を減らす」に対応
 
 ## 必要環境
@@ -99,7 +99,7 @@ CPU温度とシステムの熱状態を、デスクトップでひと目確認�
 1. [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/latest) からZIPをダウンロードし、Finderで解凍します。
 2. 展開先の `thermal kun.app` を `/Applications` に移動します。
 3. アプリを開きます。パネルが非表示の場合はメニューバーの温度計アイコンから `Show` を選びます。
-4. 必要な場合だけ、`Settings` の `Launch at Login` を有効にします。
+4. `Settings` の `Launch at Login` を確認します。新規インストール時に一度だけ有効になり、オフに変更できます。
 
 アプリはアドホック署名付きで、Appleによる公証は行っていません。macOSで開発元の確認に関する警告が出る場合の手順は [初回起動の案内](docs/INSTALL.ja.md#初回起動でmacosに止められる場合) を参照してください。
 
@@ -114,7 +114,7 @@ CPU温度とシステムの熱状態を、デスクトップでひと目確認�
 
 `build/thermal kun.app` が生成されます。Finderで開いても起動できます。
 
-継続して使う場合はFinderでアプリを `/Applications` にコピーし、開発用のアプリを終了して、コピー先を起動してください。`Launch at Login` は初期状態では無効です。安定した保存先から起動した後、`Settings` で有効にします。macOSで承認が必要な場合は `Open Login Items Settings` を選びます。
+継続して使う場合はFinderでアプリを `/Applications` にコピーし、開発用のアプリを終了して、コピー先を起動してください。`Launch at Login` は新規インストール時に一度だけ有効化し、既存のオフ選択は保持します。安定した保存先から起動した後、`Settings` で有効にします。macOSで承認が必要な場合は `Open Login Items Settings` を選びます。
 
 ### パネルの操作
 

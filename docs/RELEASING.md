@@ -1,6 +1,6 @@
 # ビルドとリリース
 
-現在のバージョンは **1.0.4（build 5）** です。ソースは [Kohei-SAWADA/thermal_kun](https://github.com/Kohei-SAWADA/thermal_kun)、配布用ZIPは [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.4) で公開しています。この手順では、アプリと配布用ZIPの作成・検証方法を説明します。
+現在のバージョンは **1.0.6（build 7）** です。ソースは [Kohei-SAWADA/thermal_kun](https://github.com/Kohei-SAWADA/thermal_kun)、配布用ZIPは [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6) で公開しています。この手順では、アプリと配布用ZIPの作成・検証方法を説明します。
 
 利用者向けのインストール手順は [English](INSTALL.md)／[日本語](INSTALL.ja.md)、紹介ページは [English README](../README.md)／[日本語README](../README.ja.md) を参照してください。
 
@@ -26,7 +26,7 @@ Swift 6以降とmacOS SDKを含むXcode Command Line Toolsを用意し、ソー�
 
 `dist/` 以下にローカル配布用ZIPを生成します。正確なファイル名はスクリプトの出力を確認してください。生成後はZIPを別の場所に展開し、`thermal kun.app` が開けることと、同梱のライセンス表示を確認します。この操作だけでは外部公開・アップロードは行いません。
 
-Apple Silicon用の現行ZIP名は `thermal-kun-macOS-arm64-v1.0.4.zip` です。ZIPと `.zip.sha256` ファイルを、対応するバージョンのGitHub Releaseへ添付します。配布用ZIPにはリソースフォークや拡張属性など、ローカル環境のメタデータを含めません。
+Apple Silicon用の現行ZIP名は `thermal-kun-macOS-arm64-v1.0.6.zip` です。ZIPと `.zip.sha256` ファイルを、対応するバージョンのGitHub Releaseへ添付します。配布用ZIPにはリソースフォークや拡張属性など、ローカル環境のメタデータを含めません。
 
 ZIPには英語の `README.md` と日本語の `README.ja.md`、`docs/INSTALL.md` と `docs/INSTALL.ja.md`、ライセンス、公開用画像を同梱します。言語切り替えリンクと画像が、解凍先でも開けることを確認してください。
 

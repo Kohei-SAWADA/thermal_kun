@@ -41,5 +41,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v1.0.5 >/dev/null 2>&1; then exit 0; fi
-          gh release create v1.0.5 dist/* --target "$GITHUB_SHA" --title 'thermal kun 1.0.5 — Login startup' --notes-file docs/release-notes-v1.0.5.md --latest
+          version=$(python3 -c "import plistlib; print(plistlib.load(open('Packaging/Info.plist', 'rb'))['CFBundleShortVersionString'])")
+          tag="v$version"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            draft=$(gh release view "$tag" --json isDraft --jq .isDraft)
+            if [ "$draft" != true ]; then exit 0; fi
+            gh release upload "$tag" dist/*
+            gh release edit "$tag" --draft=false --target "$GITHUB_SHA" --title "thermal kun $version — Login startup" --notes-file "docs/release-notes-$tag.md" --latest
+          else
+            gh release create "$tag" dist/* --target "$GITHUB_SHA" --title "thermal kun $version — Login startup" --notes-file "docs/release-notes-$tag.md" --latest
+          fi

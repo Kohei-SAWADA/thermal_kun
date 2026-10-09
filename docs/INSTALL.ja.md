@@ -5,9 +5,9 @@
 
 # thermal kunのインストール
 
-thermal kun 1.0.4（build 5）は、macOSネイティブのデスクトップ監視アプリです。対象OSはmacOS 13以降に設定していますが、動作確認はApple SiliconのMacに限ります。Releaseの `arm64` ZIPはApple Silicon用で、Intel Mac用ではありません。
+thermal kun 1.0.6（build 7）は、macOSネイティブのデスクトップ監視アプリです。対象OSはmacOS 13以降に設定していますが、動作確認はApple SiliconのMacに限ります。Releaseの `arm64` ZIPはApple Silicon用で、Intel Mac用ではありません。
 
-[GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.4) から [thermal-kun-macOS-arm64-v1.0.4.zip](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip) をダウンロードしてください。同じReleaseに [SHA-256チェックサム](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip.sha256) もあります。
+[GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6) から [thermal-kun-macOS-arm64-v1.0.6.zip](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip) をダウンロードしてください。同じReleaseに [SHA-256チェックサム](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip.sha256) もあります。
 
 ## ZIPからインストール
 
@@ -23,9 +23,9 @@ thermal kun 1.0.4（build 5）は、macOSネイティブのデスクトップ監
 
 開発元やアプリを確認できないという警告が出た場合は、まず想定した入手元のコピーであることを確認してください。一度アプリを開こうとした後、**システム設定 → プライバシーとセキュリティ** にあるthermal kunの項目で **このまま開く** を選びます。次の確認画面を読み、起動する場合は **開く** を選びます。別の警告が出る場合は [Appleの公式案内](https://support.apple.com/ja-jp/102445) に従ってください。
 
-## 任意: ログイン時に起動
+## ログイン時の自動起動
 
-`/Applications` のアプリを起動してから、`Settings` の `Launch at Login` を有効にします。初期状態では無効です。macOSの承認が必要な場合は、アプリ内の `Open Login Items Settings` から設定を開いて承認します。
+`/Applications` のアプリを起動してから、`Settings` の `Launch at Login` を有効にします。新規インストール時に一度だけ有効化し、既存のオフ選択は保持します。macOSの承認が必要な場合は、アプリ内の `Open Login Items Settings` から設定を開いて承認します。
 
 この機能を有効にする前に、安定した保存先へ配置してください。実際のログアウト／再ログインによる自動起動確認は未実施です。
 

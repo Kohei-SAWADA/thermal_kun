@@ -9,7 +9,7 @@
 
 Keep CPU temperature, CPU/GPU usage, memory, and recent temperature history visible in a compact native desktop panel.
 
-**[Download for macOS (Apple Silicon)](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)** · [Installation guide](docs/INSTALL.md) · [GIF demo](#demo)
+**[Download for macOS (Apple Silicon)](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)** · [Installation guide](docs/INSTALL.md) · [GIF demo](#demo)
 
 macOS 13+; the release app is Apple Silicon only and does not support Intel Macs. Ad-hoc signed and not notarized.
 
@@ -44,10 +44,10 @@ The thermometer logo and **charcoal, purple, and lime green** palette give it a 
 
 ## Download
 
-The current version is **1.0.4 (build 5)**. Download the Apple Silicon (`arm64`) app from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.4):
+The current version is **1.0.6 (build 7)**. Download the Apple Silicon (`arm64`) app from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6):
 
-- [Download thermal kun for macOS](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip)
-- [SHA-256 checksum](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip.sha256)
+- [Download thermal kun for macOS](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)
+- [SHA-256 checksum](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip.sha256)
 
 See the [installation guide](docs/INSTALL.md), or the [build and release guide (Japanese)](docs/RELEASING.md) to build from source and prepare a ZIP.
 
@@ -82,7 +82,7 @@ Values reflect the time of capture. Available measurements and sensors depend on
 - Drag to move and resize while keeping a 1:1 square; saved position and size with screen-layout recovery
 - Compact/detailed views and `Dark`, `Light`, or `System` appearance
 - Desktop-level display by default, with an optional `Always on Top` setting
-- Menu bar `Show`/`Hide`, `Settings…`, and `Quit thermal kun`, plus optional `Launch at Login`
+- Menu bar `Show`/`Hide`, `Settings…`, and `Quit thermal kun`, plus configurable `Launch at Login`
 - Update intervals of 1, 2, 5, or 10 seconds (default: 2); optional short animations that respect Reduce Motion
 
 ## Requirements
@@ -99,7 +99,7 @@ Values reflect the time of capture. Available measurements and sensors depend on
 1. Download the ZIP from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/latest) and extract it in Finder.
 2. Move the included `thermal kun.app` to `/Applications`.
 3. Open the app. If the panel is hidden, choose `Show` from its thermometer menu bar icon.
-4. Enable `Launch at Login` in `Settings` only if you want automatic startup.
+4. Review `Launch at Login` in `Settings`; fresh installations enable it once and you can turn it off.
 
 The app is ad-hoc signed and has not been notarized by Apple. For a macOS developer-verification alert, see [first-launch instructions](docs/INSTALL.md#if-macos-blocks-the-first-launch).
 
@@ -114,7 +114,7 @@ Run these commands in the source directory. No external package installation is 
 
 This creates `build/thermal kun.app`, which can also be opened in Finder.
 
-For ongoing use, copy the app to `/Applications`, quit the development copy, and open the installed copy. `Launch at Login` is off by default. Enable it after launching from a stable location; use `Open Login Items Settings` if macOS requires approval.
+For ongoing use, copy the app to `/Applications`, quit the development copy, and open the installed copy. New installations enable `Launch at Login` once from Applications; existing off choices remain off. Change it in Settings; use `Open Login Items Settings` if macOS requires approval.
 
 ### Panel controls
 

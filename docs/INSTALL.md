@@ -5,9 +5,9 @@
 
 # Install thermal kun
 
-thermal kun 1.0.4 (build 5) is a native macOS desktop monitor. The deployment target is macOS 13 or later, but testing has been limited to an Apple Silicon Mac. The release `arm64` ZIP is for Apple Silicon, not Intel Macs.
+thermal kun 1.0.6 (build 7) is a native macOS desktop monitor. The deployment target is macOS 13 or later, but testing has been limited to an Apple Silicon Mac. The release `arm64` ZIP is for Apple Silicon, not Intel Macs.
 
-Download [thermal-kun-macOS-arm64-v1.0.4.zip](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip) from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.4). A [SHA-256 checksum](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.4/thermal-kun-macOS-arm64-v1.0.4.zip.sha256) is available alongside the ZIP.
+Download [thermal-kun-macOS-arm64-v1.0.6.zip](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip) from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6). A [SHA-256 checksum](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip.sha256) is available alongside the ZIP.
 
 ## Install from the ZIP
 
@@ -23,9 +23,9 @@ The app uses an ad-hoc signature and has not been notarized by Apple. Monitoring
 
 If macOS cannot verify the developer or check the app, first confirm that the copy came from the expected source. After trying to open it, go to **System Settings → Privacy & Security**, find the entry for thermal kun, and select **Open Anyway**. Review the next prompt and choose **Open** if you intend to proceed. For other alerts, follow [Apple's guidance on opening apps safely](https://support.apple.com/en-us/102445).
 
-## Optional: Launch at Login
+## Launch at Login
 
-Open the copy installed in `/Applications`, then enable `Launch at Login` in `Settings`. It is off by default. If macOS requires approval, choose `Open Login Items Settings` in the app and approve the item there.
+Open the copy installed in `/Applications`, then enable `Launch at Login` in `Settings`. Fresh installations enable it once; existing off choices are preserved. If macOS requires approval, choose `Open Login Items Settings` in the app and approve the item there.
 
 Use a stable installation location before enabling this option. Automatic startup has not been verified through an actual logout/login cycle.
 
