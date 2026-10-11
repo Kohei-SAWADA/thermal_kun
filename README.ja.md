@@ -5,6 +5,18 @@
   <strong>日本語</strong>
 </p>
 
+## Windows x64プレビュー — GitHubプレリリース
+
+Windows x64の現行版は **0.1.4-temperature-preview**（ファイル版 **0.1.4.0**）です。2026-10-11に整合性を確認しました。[ZIPをダウンロード](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-temperature-preview-x64.zip) · [SHA-256](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-temperature-preview-x64.zip.sha256) · [日本語の導入案内](windows-dev/START-HERE.ja.md) · [English setup](windows-dev/START-HERE.md)。
+
+対応する最新ソースを [Windows/](Windows/) と [`thermal-kun-windows-0.1.4-source.zip`](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-source.zip) に保存しています。配布ZIP内の `ThermalKun/sources/SOURCE-Windows.zip` も同じ内容です。[Windows最新版メタデータ](LATEST_WINDOWS_BUILD.json) と [検証記録](windows-dev/VERIFICATION.md) を参照してください。52ファイルのビルド時ソースは元のローカルソースと完全一致し、バイナリ／PDBのソースハッシュも一致しました。メタデータ記載のcommitとはGitの改行正規化を除いて同じ内容です。公開に伴いリポジトリのダウンロード案内を更新していますが、コンパイル対象のソースは同じです。再ビルド不要のため、検証済みのZIPを保持しています。
+
+ZIP全体を展開し `ThermalKun/ThermalKun.exe` を起動します。.NETランタイム同梱。画面は通常権限で動き、任意のCPU温度取得は同梱LibreHardwareMonitorと別の補助プロセスを使い、Windowsの管理者確認が必要です。ログイン時起動の初期値はoffです。メモリ使用量を表示し、macOS式の熱状態とメモリ圧力はWindows画面に表示しません。未署名のWindows x64プレビューとしてGitHubプレリリースで公開しています。macOS安定版は1.0.6のままです。
+
+## macOS公開版
+
+macOS版は **1.0.6（build 7）** です。以下のデモ・画面例・プラットフォーム固有の説明はmacOS版について説明しています。
+
 **MacのCPU温度をリアルタイムで確認。**
 
 CPU温度・CPU/GPU使用率・メモリ・最近の温度履歴を、コンパクトなネイティブのデスクトップパネルで確認できます。
@@ -12,10 +24,6 @@ CPU温度・CPU/GPU使用率・メモリ・最近の温度履歴を、コンパ�
 **[macOS版をダウンロード（Apple Silicon）](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)** · [導入ガイド](docs/INSTALL.ja.md) · [GIFデモ](#デモ)
 
 macOS 13以降。配布アプリはApple Silicon専用で、Intel Macは非対応です。アドホック署名・未公証です。
-
-## Windows版プレビュー
-
-[Windows x64 0.1.4のダウンロード・導入・ビルド案内](Windows/README.md)。Windows版ではTHERMAL STATUSとメモリ圧力を表示せず、実測のメモリ使用量を表示します。CPU温度は同梱の温度取得機能で読み、表示画面は通常権限で動きます。
 
 ## デモ
 
@@ -48,7 +56,7 @@ CPU温度とシステムの熱状態を、デスクトップでひと目確認�
 
 ## ダウンロード
 
-現在のバージョンは **1.0.6（build 7）** です。Apple Silicon（`arm64`）用アプリを [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6) からダウンロードできます。
+macOS版の現在のバージョンは **1.0.6（build 7）** です。Apple Silicon（`arm64`）用アプリを [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6) からダウンロードできます。
 
 - [thermal kunのmacOS版をダウンロード](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)
 - [SHA-256チェックサム](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip.sha256)
@@ -94,7 +102,7 @@ CPU温度とシステムの熱状態を、デスクトップでひと目確認�
 - macOS 13以降を対象に設定しています。確認環境はApple SiliconのMacで、他機種・他OSでの動作は未確認です。
 - ソースビルドにはSwift 6以降と、macOS SDKを含むXcode Command Line Toolsが必要です。
 - ビルドは現在のMacのアーキテクチャ向けです。Universal Binaryは生成しません。
-- Windows／Linux版はありません。管理者権限や特権ヘルパーは使用しません。
+- この節はmacOS版の説明です。macOS版は管理者権限や特権ヘルパーを使用しません。Windows x64プレビューと任意の温度取得に必要な管理者確認は上のWindows節を参照してください。Linux版はありません。
 
 ## すぐ試す
 

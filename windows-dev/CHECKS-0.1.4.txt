@@ -1,0 +1,4 @@
+PASS: 12 bundled CPU temperature checks (age, identity, ranges, missing values, priority). Synthetic data never enters the app UI.
+PASS: Windows pipe regression checks (live frame, newline framing, GUI disconnect, disposal, unrelated I/O failure).
+PASS: 194 cross-platform checks (readings, CPU/GPU aggregation, history, stale state, isolated preferences, local temperature parser and fake HTTP transport).
+These checks do not validate Windows sensors, native UI, drivers, startup registration, or a physical login cycle.

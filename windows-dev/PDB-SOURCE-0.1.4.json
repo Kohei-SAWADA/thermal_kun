@@ -1,0 +1,78 @@
+[
+  {
+    "assembly": "ThermalKun",
+    "codeViewAndPdbIdentityMatches": true,
+    "sourceDocuments": [
+      {
+        "path": "Windows/src/ThermalKun.App/BundledTemperature.cs",
+        "sha256": "d8dc405ad1457def3512cc063cc6bce3a3826e39691cc9b1851f09d3a41fda7c"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/GlobalUsings.cs",
+        "sha256": "630c26afd97290510824707e1a50801a7082fafdcecd52d9ef6f7e16220968a3"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/HistoryGraph.cs",
+        "sha256": "b7da641719849bbd200a0bc311a3f70ff6a866319f68477e2afced4a428369e7"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/NativeSensors.cs",
+        "sha256": "efa2609df1381ac0a0b6f5394a609946f0465a2289d7ee60b0635656a01c0a01"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/PanelWindow.cs",
+        "sha256": "1410156994e96b3dc8a8f62b57823b30cdadc10a976c2cbf89649ca5f500a7e9"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/Program.cs",
+        "sha256": "b5731591317c6443fd48b82ef09365eab274358c7773c8bf3e732bb70f611592"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/SensorHost.cs",
+        "sha256": "d89fafa793ec9e010d41a7c8be5b45cfbccb80d6e5b88804025b34e49afdf5ce"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/SensorPipeWriter.cs",
+        "sha256": "04328c278a52688016a7ec0c77d6456967e3b88dacce6ce435653d9665d2ff36"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/SensorPreflight.cs",
+        "sha256": "6bb048047f77d0333e4e6ade3939b49af7c0bc896f35a7ffa6454d4ad0b01308"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/SettingsWindow.cs",
+        "sha256": "f099a2dca0785e940d5ab32c130d399567fd64c039942e1e98abe40de05d0bee"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/StartupLog.cs",
+        "sha256": "cc7bf8f4939ac462e68945dafb147770c2ff24abce7f58d0b7d328a189623521"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/StartupService.cs",
+        "sha256": "fbccec44e485d993c1d54079baffe98cef0cbd5823a90cea48ba963fce40828b"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/TemperatureSelection.cs",
+        "sha256": "f083d062600b87bc7d9970170f64c880b6c09cb790f6576b219c21e7e3e2046f"
+      },
+      {
+        "path": "Windows/src/ThermalKun.App/Theme.cs",
+        "sha256": "fd1019ffde6a6de0e08df22075280b6e7fa485205e0b59df466b7ec7779f6093"
+      }
+    ]
+  },
+  {
+    "assembly": "ThermalKun.Core",
+    "codeViewAndPdbIdentityMatches": true,
+    "sourceDocuments": [
+      {
+        "path": "Windows/src/ThermalKun.Core/Measurements.cs",
+        "sha256": "e7e2b928dd10e87dfe1a0f040b12ebefa5bede4218643f405412f83c0258ec74"
+      },
+      {
+        "path": "Windows/src/ThermalKun.Core/Preferences.cs",
+        "sha256": "29275a939f86acfcb2c9eb1307a74cb5232491bca1bf446ad8b052116a109880"
+      }
+    ]
+  }
+]

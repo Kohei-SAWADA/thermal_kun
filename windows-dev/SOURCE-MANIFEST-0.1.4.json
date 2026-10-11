@@ -1,0 +1,268 @@
+{
+  "version": "0.1.4-temperature-preview",
+  "sourceArchiveSha256": "ae04e801e9610267678f0cf952fafa177c64125c4fa8ccf49ee26065575b269a",
+  "files": [
+    {
+      "path": "Windows/.gitignore",
+      "bytes": 62,
+      "sha256": "60fb2edc3de706223de18341ae928baa17ca94ff7feea16c2376ceeea9003a19"
+    },
+    {
+      "path": "Windows/assets/thermal-kun-icon-256.png",
+      "bytes": 11899,
+      "sha256": "116334818d9dcf22a0640d368dbc0285086f1eacf54b8eedb7841a21b8e9a7a5"
+    },
+    {
+      "path": "Windows/assets/ThermalKun.ico",
+      "bytes": 11921,
+      "sha256": "82e4970cff7547b93fb52d05e402796bb2df2aec4cecb9d52795d9de3a3a7b21"
+    },
+    {
+      "path": "Windows/assets/windows-preview.jpg",
+      "bytes": 18465,
+      "sha256": "039a211f6d439b43485f388a7ec9c8d77e1f8673422b3d8e128bf975d2e25134"
+    },
+    {
+      "path": "Windows/Directory.Build.props",
+      "bytes": 175,
+      "sha256": "5e899cdbc454e3efbd63af7bd72be30ab586303032d4e59e2a49dfef446239b2"
+    },
+    {
+      "path": "Windows/docs/BUILD-PROVENANCE.json",
+      "bytes": 626,
+      "sha256": "837de82d65806c3aa1cbbd0e1d4f5889a64fa60c1a21974a83696fd5593c6985"
+    },
+    {
+      "path": "Windows/docs/DEPENDENCIES.md",
+      "bytes": 2646,
+      "sha256": "d72c46a251b029e10be5b22b06c0430dd3bd7d7c2c384b7354b4d58f685ef697"
+    },
+    {
+      "path": "Windows/docs/DESIGN.md",
+      "bytes": 2576,
+      "sha256": "2953f8592b9287a9b9839e14bb4ac443c69004caf08d893ceaec74a2fcedc97a"
+    },
+    {
+      "path": "Windows/docs/START-HERE.ja.md",
+      "bytes": 3630,
+      "sha256": "0be80e8ef899c48137eb7a433b575f929c86737a22382269098e8f5c97a16a7a"
+    },
+    {
+      "path": "Windows/docs/USAGE-KUN-REFERENCE-LICENSE.txt",
+      "bytes": 1090,
+      "sha256": "a781cc358e5280a2762d417cf0de0fe332d5e81ff1cf168ef3106b8beb2a1a83"
+    },
+    {
+      "path": "Windows/docs/VERIFICATION.md",
+      "bytes": 3915,
+      "sha256": "53121a8da8cca18c3baece36a6e092726d2ebbc23e3d564011451399a64a1679"
+    },
+    {
+      "path": "Windows/global.json",
+      "bytes": 62,
+      "sha256": "5a8c0605e2d5a5366b7052e89cdaa1fa8c74d1af73ab156ca10179b0c59a2d76"
+    },
+    {
+      "path": "Windows/NuGet.Config",
+      "bytes": 180,
+      "sha256": "621971b208977628a5fa285bb213d406000c7c1c0d5147c05a0bc7781764ece6"
+    },
+    {
+      "path": "Windows/README.md",
+      "bytes": 2803,
+      "sha256": "8613accf6fe95d5b9af55bc34578303e234339652847e8726548f4d74100b232"
+    },
+    {
+      "path": "Windows/scripts/build.sh",
+      "bytes": 630,
+      "sha256": "9cf513b6f793dc5930b8142744c70dc5e032349fed3c7db163f0b3b4e0aa27da"
+    },
+    {
+      "path": "Windows/scripts/check.sh",
+      "bytes": 391,
+      "sha256": "82a816b4f431edd717830d40cc6ff991b88446a8e73d33ac235d5b48c4bd9f6c"
+    },
+    {
+      "path": "Windows/scripts/diagnose.ps1",
+      "bytes": 600,
+      "sha256": "949f9311693c7d900a7452c992ac8d1d7515ab76b32b79d32bb873701e6cbac7"
+    },
+    {
+      "path": "Windows/scripts/package.py",
+      "bytes": 4759,
+      "sha256": "783885c33575ba1ebc5fe829efc6ec07781050ae116b904caff79d8f5cdc199f"
+    },
+    {
+      "path": "Windows/scripts/prepare-dependencies.ps1",
+      "bytes": 1779,
+      "sha256": "fdf135922b6d452dcb4e96016370d079436a1c091a7aca31689657057a4d4530"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/app.manifest",
+      "bytes": 885,
+      "sha256": "f3feffc0e6ef5adada62942ea2f0d06857e274e48eeb716f2fd784271f41d568"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/BundledTemperature.cs",
+      "bytes": 9148,
+      "sha256": "d8dc405ad1457def3512cc063cc6bce3a3826e39691cc9b1851f09d3a41fda7c"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/GlobalUsings.cs",
+      "bytes": 186,
+      "sha256": "630c26afd97290510824707e1a50801a7082fafdcecd52d9ef6f7e16220968a3"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/HistoryGraph.cs",
+      "bytes": 7896,
+      "sha256": "b7da641719849bbd200a0bc311a3f70ff6a866319f68477e2afced4a428369e7"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/NativeSensors.cs",
+      "bytes": 28457,
+      "sha256": "efa2609df1381ac0a0b6f5394a609946f0465a2289d7ee60b0635656a01c0a01"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/PanelWindow.cs",
+      "bytes": 28062,
+      "sha256": "1410156994e96b3dc8a8f62b57823b30cdadc10a976c2cbf89649ca5f500a7e9"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/Program.cs",
+      "bytes": 18389,
+      "sha256": "b5731591317c6443fd48b82ef09365eab274358c7773c8bf3e732bb70f611592"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/SensorHost.cs",
+      "bytes": 4309,
+      "sha256": "d89fafa793ec9e010d41a7c8be5b45cfbccb80d6e5b88804025b34e49afdf5ce"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/SensorPipeWriter.cs",
+      "bytes": 667,
+      "sha256": "04328c278a52688016a7ec0c77d6456967e3b88dacce6ce435653d9665d2ff36"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/SensorPreflight.cs",
+      "bytes": 2663,
+      "sha256": "6bb048047f77d0333e4e6ade3939b49af7c0bc896f35a7ffa6454d4ad0b01308"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/SettingsWindow.cs",
+      "bytes": 18864,
+      "sha256": "f099a2dca0785e940d5ab32c130d399567fd64c039942e1e98abe40de05d0bee"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/StartupLog.cs",
+      "bytes": 1174,
+      "sha256": "cc7bf8f4939ac462e68945dafb147770c2ff24abce7f58d0b7d328a189623521"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/StartupService.cs",
+      "bytes": 2545,
+      "sha256": "fbccec44e485d993c1d54079baffe98cef0cbd5823a90cea48ba963fce40828b"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/TemperatureSelection.cs",
+      "bytes": 1753,
+      "sha256": "f083d062600b87bc7d9970170f64c880b6c09cb790f6576b219c21e7e3e2046f"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/Theme.cs",
+      "bytes": 7514,
+      "sha256": "fd1019ffde6a6de0e08df22075280b6e7fa485205e0b59df466b7ec7779f6093"
+    },
+    {
+      "path": "Windows/src/ThermalKun.App/ThermalKun.App.csproj",
+      "bytes": 2409,
+      "sha256": "171bfb0f2538c113a9ddecc07f39c166f11a0dc444363b89b56cecf6783ab1ec"
+    },
+    {
+      "path": "Windows/src/ThermalKun.Core/Measurements.cs",
+      "bytes": 4289,
+      "sha256": "e7e2b928dd10e87dfe1a0f040b12ebefa5bede4218643f405412f83c0258ec74"
+    },
+    {
+      "path": "Windows/src/ThermalKun.Core/Preferences.cs",
+      "bytes": 1977,
+      "sha256": "29275a939f86acfcb2c9eb1307a74cb5232491bca1bf446ad8b052116a109880"
+    },
+    {
+      "path": "Windows/src/ThermalKun.Core/ThermalKun.Core.csproj",
+      "bytes": 241,
+      "sha256": "e5a7d76f092d2d4b7213478d2bfeb5349de76d92e578a64ef41e7a9d5c52781b"
+    },
+    {
+      "path": "Windows/tests/ThermalKun.Checks/Program.cs",
+      "bytes": 38258,
+      "sha256": "dcc3d27c6dc8b49922a95e4c4120d51e9af2205c30d4898eb6f912a294504d7e"
+    },
+    {
+      "path": "Windows/tests/ThermalKun.Checks/SensorPipeChecks.cs",
+      "bytes": 2389,
+      "sha256": "a400d17404466170f68d3a2266f901f37cfa13a009cb096c2a2e5525088ad471"
+    },
+    {
+      "path": "Windows/tests/ThermalKun.Checks/TemperatureChecks.cs",
+      "bytes": 1909,
+      "sha256": "992a6279b8aec7edf7a62c234ddfb6fb7d274480af353188278343ff91e6e623"
+    },
+    {
+      "path": "Windows/tests/ThermalKun.Checks/ThermalKun.Checks.csproj",
+      "bytes": 967,
+      "sha256": "92e26e038f41cef6ad4f6ab020dcc181a456603a0fcebe87b7218becd2638dbd"
+    },
+    {
+      "path": "Windows/third-party-notices/dotnet-runtime-MIT.txt",
+      "bytes": 1139,
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b"
+    },
+    {
+      "path": "Windows/third-party-notices/dotnet-runtime-THIRD-PARTY-NOTICES.txt",
+      "bytes": 78041,
+      "sha256": "6d15e10a101c6bfff2ab4429ed061bf76c456fc4b23ad6b03e0d0f8377148a21"
+    },
+    {
+      "path": "Windows/third-party-notices/LibreHardwareMonitor-MPL-2.0.txt",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "Windows/third-party-notices/LibreHardwareMonitor-THIRD-PARTY-NOTICES.txt",
+      "bytes": 25905,
+      "sha256": "a60d5ee62f4d700caff38566f42874d554b8b530437c72804fb28b958cfbda9b"
+    },
+    {
+      "path": "Windows/third-party-notices/PawnIO-installer-distribution.txt",
+      "bytes": 413,
+      "sha256": "c42e3a1455182582643acf3eedf84a21cd86e85354d9c307df2ab0e2fe7d2458"
+    },
+    {
+      "path": "Windows/third-party-notices/PawnIO.Modules-LGPL-2.1.txt",
+      "bytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "path": "Windows/third-party-notices/thermal-kun-MIT.txt",
+      "bytes": 1069,
+      "sha256": "a0994ab700bfbc0a2c4bca7989562f22300186e47b6a9e24383b9ac03e60b078"
+    },
+    {
+      "path": "Windows/third-party-notices/usage-kun-reference-MIT.txt",
+      "bytes": 1069,
+      "sha256": "a0994ab700bfbc0a2c4bca7989562f22300186e47b6a9e24383b9ac03e60b078"
+    },
+    {
+      "path": "Windows/third-party-notices/windowsdesktop-MIT.txt",
+      "bytes": 1137,
+      "sha256": "a89886665765362eb77e0f8e26602c924520041d1711b2eedc136434fe4d01ab"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1090,
+      "sha256": "a781cc358e5280a2762d417cf0de0fe332d5e81ff1cf168ef3106b8beb2a1a83"
+    }
+  ],
+  "scope": "Original 52-file build snapshot at sourceCommit, not later publication documentation changes.",
+  "sourceCommit": "5627dccdb48f5e658317ad14c27a12593b4cb81f"
+}

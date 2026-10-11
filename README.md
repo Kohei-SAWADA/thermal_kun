@@ -5,6 +5,18 @@
   <a href="README.ja.md">日本語</a>
 </p>
 
+## Windows x64 preview — GitHub prerelease
+
+The current Windows x64 preview is **0.1.4-temperature-preview** (file version **0.1.4.0**), verified on 2026-10-11. [Download the complete ZIP](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-temperature-preview-x64.zip) · [SHA-256](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-temperature-preview-x64.zip.sha256) · [English setup](windows-dev/START-HERE.md) · [日本語の導入案内](windows-dev/START-HERE.ja.md).
+
+The matching source is available in [Windows/](Windows/) and as [`thermal-kun-windows-0.1.4-source.zip`](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-source.zip); the identical snapshot is embedded in the distribution at `ThermalKun/sources/SOURCE-Windows.zip`. See [latest Windows build metadata](LATEST_WINDOWS_BUILD.json) and [verification](windows-dev/VERIFICATION.md). The 52-file build snapshot matches the original local source exactly, and all binary/PDB source hashes match. Its content matches the source commit linked in the metadata after Git line-ending normalization. Repository download instructions were updated for publication; compiled source is unchanged. The verified ZIP was retained because a rebuild was unnecessary.
+
+Extract the entire self-contained ZIP and run `ThermalKun/ThermalKun.exe`. The display uses ordinary privileges; optional CPU temperature uses bundled LibreHardwareMonitor and requires Windows administrator confirmation for its separate reader. Startup is off by default. Physical memory use is shown; macOS thermal status and memory pressure are omitted from the Windows panel. This is an unsigned Windows x64 preview published as a GitHub prerelease. The macOS stable release remains 1.0.6.
+
+## macOS public release
+
+The macOS release remains **1.0.6 (build 7)**. The following demos, screenshots and platform-specific instructions describe the macOS edition.
+
 **Monitor Your Mac's CPU Temperature in Real Time.**
 
 Keep CPU temperature, CPU/GPU usage, memory, and recent temperature history visible in a compact native desktop panel.
@@ -12,10 +24,6 @@ Keep CPU temperature, CPU/GPU usage, memory, and recent temperature history visi
 **[Download for macOS (Apple Silicon)](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)** · [Installation guide](docs/INSTALL.md) · [GIF demo](#demo)
 
 macOS 13+; the release app is Apple Silicon only and does not support Intel Macs. Ad-hoc signed and not notarized.
-
-## Windows preview
-
-[Windows x64 0.1.4: download, setup and build instructions](Windows/README.md). The Windows panel omits THERMAL STATUS and memory pressure; measured memory usage remains visible. CPU temperature uses an optional bundled reader; the display runs with ordinary user privileges.
 
 ## Demo
 
@@ -48,7 +56,7 @@ The thermometer logo and **charcoal, purple, and lime green** palette give it a 
 
 ## Download
 
-The current version is **1.0.6 (build 7)**. Download the Apple Silicon (`arm64`) app from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6):
+The current macOS version is **1.0.6 (build 7)**. Download the Apple Silicon (`arm64`) app from [GitHub Releases](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/v1.0.6):
 
 - [Download thermal kun for macOS](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip)
 - [SHA-256 checksum](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/v1.0.6/thermal-kun-macOS-arm64-v1.0.6.zip.sha256)
@@ -94,7 +102,7 @@ Values reflect the time of capture. Available measurements and sensors depend on
 - Deployment target: macOS 13 or later. Tested on an Apple Silicon Mac; other models and OS versions are unverified.
 - Source builds require Swift 6 or later and Xcode Command Line Tools with the macOS SDK.
 - Builds target the current Mac architecture. The release ZIP is for Apple Silicon (`arm64`); it is not a Universal Binary.
-- macOS only. Monitoring needs no administrator access or privileged helper.
+- This section describes macOS. The macOS app needs no administrator access or privileged helper. For the Windows x64 preview and its optional administrator-approved temperature reader, see the Windows section above.
 
 ## Quick start
 

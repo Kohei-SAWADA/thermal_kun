@@ -2,7 +2,7 @@
 
 ## 導入と更新
 
-1. [配布フォルダー](https://drive.google.com/drive/folders/11HG4j0yWuMQaATIV9dsupPhOCHJHotiv)から `thermal-kun-windows-0.1.4-temperature-preview-x64.zip` と同名の `.sha256` を取得します。
+1. [配布フォルダー](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/windows-v0.1.4-temperature-preview)から `thermal-kun-windows-0.1.4-temperature-preview-x64.zip` と同名の `.sha256` を取得します。
 2. PowerShellの `Get-FileHash` でZIPのSHA-256を照合します。
 3. ZIPをすべて展開し、`ThermalKun/ThermalKun.exe` を起動します。.NETランタイムは同梱しています。
 4. CPU温度を使う場合は設定の「CPU温度を有効にする / 再接続」を選び、導入確認とWindowsの管理者確認を本人が承認します。

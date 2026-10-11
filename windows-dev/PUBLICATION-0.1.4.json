@@ -1,0 +1,21 @@
+{
+  "version": "0.1.4-temperature-preview",
+  "releaseTag": "windows-v0.1.4-temperature-preview",
+  "originalBuildSourceCommit": "5627dccdb48f5e658317ad14c27a12593b4cb81f",
+  "originalBuildSourceArchiveSha256": "ae04e801e9610267678f0cf952fafa177c64125c4fa8ccf49ee26065575b269a",
+  "originalBinaryArchiveSha256": "0c7dd14b3a5ea2d24bac6b2e3b57a8ca46d49632e3609d677f268e56c38d07b6",
+  "publicationOnlySourceDifferences": [
+    "Windows/README.md",
+    "Windows/docs/START-HERE.ja.md"
+  ],
+  "compiledSourceChanged": false,
+  "binaryArchiveChanged": false,
+  "originalSourceGitBlobComparison": {
+    "files": 52,
+    "byteIdentical": 18,
+    "equivalentAfterGitLineEndingNormalization": 52,
+    "nonLineEndingDifferences": []
+  },
+  "macOSStableRelease": "v1.0.6",
+  "releaseIsPrerelease": true
+}

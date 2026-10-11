@@ -6,7 +6,7 @@ Native WPF desktop panel for CPU temperature, CPU/GPU load, physical memory usag
 
 ## Download and run
 
-Download `thermal-kun-windows-0.1.4-temperature-preview-x64.zip` and its SHA-256 file from the [Windows distribution folder](https://drive.google.com/drive/folders/11HG4j0yWuMQaATIV9dsupPhOCHJHotiv). Extract the entire ZIP and run `ThermalKun/ThermalKun.exe`. The ZIP includes the .NET runtime. This is an unsigned Windows x64 preview.
+Download `thermal-kun-windows-0.1.4-temperature-preview-x64.zip` and its SHA-256 file from the [GitHub Windows prerelease](https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/windows-v0.1.4-temperature-preview). Extract the entire ZIP and run `ThermalKun/ThermalKun.exe`. The ZIP includes the .NET runtime. This is an unsigned Windows x64 preview.
 
 The display runs with ordinary user privileges. CPU temperature uses bundled LibreHardwareMonitor 0.9.6 and PawnIO 2.2.0. In Settings, enable CPU temperature. Initial driver installation requires explicit confirmation; the CPU reader requires a Windows administrator confirmation each time the app starts. Cancelling leaves CPU/GPU load and memory available. No separate monitoring application or HTTP server is needed.
 
@@ -29,3 +29,5 @@ python Windows/scripts/package.py Windows/artifacts/win-x64
 If local script execution is restricted, use the pinned URLs and hashes in DEPENDENCIES.md and place the verified files at the documented paths. Changing PowerShell or Windows security settings is unnecessary.
 
 Only Windows x64 is verified for this version. Temperature accuracy against an external instrument, other PCs, ARM64, multiple monitors, sleep/resume, and public SmartScreen reputation remain unverified. Unsupported thermal-state and memory-pressure fields are retained only in diagnostic data for compatibility; neither is inferred from temperature or used-memory percentage.
+
+The original build source is included as `ThermalKun/sources/SOURCE-Windows.zip` in the distribution and as a [standalone source archive](https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-source.zip). Repository download documentation was updated for publication; compiled source is unchanged.

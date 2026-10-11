@@ -1,0 +1,100 @@
+{
+  "product": "thermal kun for Windows",
+  "version": "0.1.4-temperature-preview",
+  "fileVersion": "0.1.4.0",
+  "auditDate": "2026-10-11",
+  "verifiedAtUtc": "2026-10-11T08:27:39.382683+00:00",
+  "distributionStatus": "public-unsigned-windows-x64-prerelease",
+  "currentArchitectures": [
+    "win-x64"
+  ],
+  "sourceCommit": "5627dccdb48f5e658317ad14c27a12593b4cb81f",
+  "sourceTree": "Windows/",
+  "binary": {
+    "filename": "thermal-kun-windows-0.1.4-temperature-preview-x64.zip",
+    "url": "https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-temperature-preview-x64.zip",
+    "bytes": 93206008,
+    "sha256": "0c7dd14b3a5ea2d24bac6b2e3b57a8ca46d49632e3609d677f268e56c38d07b6",
+    "checksumUrl": "https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-temperature-preview-x64.zip.sha256"
+  },
+  "source": {
+    "filename": "thermal-kun-windows-0.1.4-source.zip",
+    "embeddedPath": "ThermalKun/sources/SOURCE-Windows.zip",
+    "bytes": 153281,
+    "sha256": "ae04e801e9610267678f0cf952fafa177c64125c4fa8ccf49ee26065575b269a",
+    "files": 52,
+    "embeddedSourceIdenticalToStandalone": true,
+    "manifest": "windows-dev/SOURCE-MANIFEST-0.1.4.json",
+    "url": "https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-source.zip",
+    "checksumUrl": "https://github.com/Kohei-SAWADA/thermal_kun/releases/download/windows-v0.1.4-temperature-preview/thermal-kun-windows-0.1.4-source.zip.sha256",
+    "originalLocalBuildSnapshotIdentical": true,
+    "originalSourceCommitEquivalentAfterLineEndingNormalization": true,
+    "gitSourceByteIdentical": false,
+    "byteExactReference": "Original source ZIP (also embedded in the binary ZIP); PDB source hashes validate this snapshot.",
+    "repositoryPublicationChanges": "Download documentation only; compiled source unchanged."
+  },
+  "checks": {
+    "archiveCrcPassed": true,
+    "manifestPayloadFilesVerified": 508,
+    "independentCloudZipSha256Matched": true,
+    "installedBinaryAndPdbIdentity": {
+      "ThermalKun.exe": {
+        "packageSha256": "90a64229d57260ad46fefd1cf8fafa48ffdfa0180420750f4d40561428bf8faf",
+        "installedSha256": "90a64229d57260ad46fefd1cf8fafa48ffdfa0180420750f4d40561428bf8faf"
+      },
+      "ThermalKun.dll": {
+        "packageSha256": "8e7cce2316f64f6a321416a82dcb0f40e8736123d0b2c82c66b630ab0bf76e29",
+        "installedSha256": "8e7cce2316f64f6a321416a82dcb0f40e8736123d0b2c82c66b630ab0bf76e29"
+      },
+      "ThermalKun.pdb": {
+        "packageSha256": "a71f955facbff93f72759bd123183dbf40509f42a28ffc96f6b217abe0da5a6a",
+        "installedSha256": "a71f955facbff93f72759bd123183dbf40509f42a28ffc96f6b217abe0da5a6a"
+      },
+      "ThermalKun.Core.dll": {
+        "packageSha256": "d91c77ed9f3aea4140640f1831b48cc6e51ee4550decb4fe9062bdf8cc2ac0ce",
+        "installedSha256": "d91c77ed9f3aea4140640f1831b48cc6e51ee4550decb4fe9062bdf8cc2ac0ce"
+      },
+      "ThermalKun.Core.pdb": {
+        "packageSha256": "6e8e323f22db823bd813c107db9520ad5ce8dca6cbc9c8d9c06b07845900cdd4",
+        "installedSha256": "6e8e323f22db823bd813c107db9520ad5ce8dca6cbc9c8d9c06b07845900cdd4"
+      }
+    },
+    "dllCodeViewAndPdbIdentityMatches": true,
+    "pdbSourceDocumentsMatched": 16,
+    "coreChecksPassed": 194,
+    "temperatureBoundaryChecksPassed": 12,
+    "windowsPipeRegression": "PASS",
+    "applicationRebuiltThisAudit": false,
+    "rebuildRequired": false,
+    "rebuildDecision": "Latest source is identical to archived source; DLL/PDB identities and all source checksums match. Existing current ZIP is retained.",
+    "applicationLaunchedThisAudit": false
+  },
+  "evidence": {
+    "audit": "windows-dev/AUDIT-2026-10-11-0.1.4.json",
+    "pdb": "windows-dev/PDB-SOURCE-0.1.4.json",
+    "checks": "windows-dev/CHECKS-0.1.4.txt",
+    "historicalWindowsVerification": "Windows/docs/VERIFICATION.md"
+  },
+  "documentation": {
+    "english": "README.md",
+    "japanese": "README.ja.md",
+    "windowsEnglish": "windows-dev/START-HERE.md",
+    "windowsJapanese": "windows-dev/START-HERE.ja.md"
+  },
+  "publicMacReleaseUnchanged": "1.0.6 (build 7)",
+  "unverified": [
+    "Other PCs",
+    "Windows ARM64 and Windows 10",
+    "Other DPI settings and multiple monitors",
+    "Physical sleep/resume",
+    "Temperature calibration against an external instrument",
+    "Actual login-cycle startup",
+    "Public SmartScreen reputation",
+    "Fresh application rebuild and NuGet vulnerability audit"
+  ],
+  "releaseTag": "windows-v0.1.4-temperature-preview",
+  "releaseUrl": "https://github.com/Kohei-SAWADA/thermal_kun/releases/tag/windows-v0.1.4-temperature-preview",
+  "publicationDate": "2026-10-11",
+  "sourceCommitUrl": "https://github.com/Kohei-SAWADA/thermal_kun/commit/5627dccdb48f5e658317ad14c27a12593b4cb81f",
+  "verificationScope": "2026-10-11 source/distribution audit; original build and GUI evidence are documented separately. Publication does not imply a fresh rebuild."
+}
