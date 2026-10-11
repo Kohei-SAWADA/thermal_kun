@@ -10,7 +10,7 @@ import zipfile
 
 WINDOWS = Path(__file__).resolve().parents[1]
 REPO = WINDOWS.parent
-VERSION = "0.1.3-temperature-preview"
+VERSION = "0.1.4-temperature-preview"
 SOURCES = {
     "LibreHardwareMonitor.NET.10.zip": "29739c4959b01b348fddad87664066634bcfd4f46e9bf41e4e916c318bcfdb99",
     "LibreHardwareMonitor-0.9.6-source.zip": "28100b87fcd7a9a213c58fabe1174e4f3064975b5ab11799224766993ca1fbfc",

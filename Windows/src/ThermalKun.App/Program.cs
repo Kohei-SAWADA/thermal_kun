@@ -108,7 +108,7 @@ public static class Program
             sensors.Sample(prefs.LibreHardwareMonitorEnabled);
             Thread.Sleep(2000);
             var sample = sensors.Sample(prefs.LibreHardwareMonitorEnabled);
-            var json = JsonSerializer.Serialize(new { version = "0.1.3-temperature-preview", bundledDriverInstalled = BundledTemperature.DriverInstalled, os = RuntimeInformation.OSDescription,
+            var json = JsonSerializer.Serialize(new { version = "0.1.4-temperature-preview", bundledDriverInstalled = BundledTemperature.DriverInstalled, os = RuntimeInformation.OSDescription,
                 architecture = RuntimeInformation.ProcessArchitecture.ToString(), sourceTimestampMeaning = "Local collection/response time; external sensor acquisition age is not supplied by LibreHardwareMonitor.", sample },
                 new JsonSerializerOptions { WriteIndented = true, Converters = { new JsonStringEnumConverter() } });
             var index = Array.IndexOf(args, "--output");

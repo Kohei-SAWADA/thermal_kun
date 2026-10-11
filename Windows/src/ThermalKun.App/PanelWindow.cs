@@ -22,7 +22,6 @@ public sealed class PanelWindow : Window
     private TemperatureHistory? _history;
     private readonly DispatcherTimer _statusTimer;
     private TextBlock _temperatureValue = null!, _temperatureUnit = null!, _temperatureSource = null!;
-    private TextBlock _memoryPressure = null!;
     private TextBlock _peakValue = null!, _live = null!, _timestamp = null!;
     private Ellipse _liveDot = null!;
     private Border _temperatureSection = null!;
@@ -247,9 +246,6 @@ public sealed class PanelWindow : Window
         _cpu = new MetricView("CPU LOAD", InstrumentTheme.AccentKey, AnimateMeters) { Margin = new Thickness(0, 0, 11, 0) };
         _gpu = new MetricView("GPU LOAD", InstrumentTheme.SupportKey, AnimateMeters) { Margin = new Thickness(0, 0, 11, 0) };
         _memory = new MetricView("MEMORY", InstrumentTheme.SupportKey, AnimateMeters);
-        _memoryPressure = InstrumentTheme.Label("Unsupported", 8);
-        _memoryPressure.HorizontalAlignment = HorizontalAlignment.Right;
-        _memory.LabelGrid.Children.Add(_memoryPressure);
         grid.Children.Add(_cpu);
         if (!_preferences.Compact)
         {
@@ -358,9 +354,7 @@ public sealed class PanelWindow : Window
         var memoryFraction = sample.MemoryUsedGiB.IsAvailable && sample.MemoryTotalGiB.IsAvailable && sample.MemoryTotalGiB.Value > 0
             ? sample.MemoryUsedGiB.Value / sample.MemoryTotalGiB.Value : null;
         _memory.Update(ReadingText(sample.MemoryUsedGiB, "0.0", " GiB"), memoryFraction,
-            ReadingHelp(sample.MemoryUsedGiB) + "\n" + ReadingHelp(sample.MemoryTotalGiB) + "\nMemory pressure: " + ReadingHelp(sample.MemoryPressure), sample.MemoryUsedGiB.IsAvailable);
-        _memoryPressure.Text = sample.MemoryPressure.IsAvailable ? ReadingText(sample.MemoryPressure, "0") : sample.MemoryPressure.MissingLabel;
-        _memoryPressure.ToolTip = ReadingHelp(sample.MemoryPressure);
+            ReadingHelp(sample.MemoryUsedGiB) + "\n" + ReadingHelp(sample.MemoryTotalGiB), sample.MemoryUsedGiB.IsAvailable);
         _peakValue.Text = _history?.Peak is double peak && double.IsFinite(peak) ? peak.ToString("0.0°C", CultureInfo.InvariantCulture) : "Unavailable";
         _graph.Update(_history?.Points ?? [], _theme, _preferences.UpdateInterval);
         UpdateFooter();

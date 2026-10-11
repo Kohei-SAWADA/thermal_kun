@@ -116,8 +116,7 @@ public sealed class SettingsWindow : Window
                 ("CPU LOAD", sample.CpuLoad, "%"),
                 ("GPU LOAD", sample.GpuLoad, "%"),
                 ("MEMORY USED", sample.MemoryUsedGiB, " GiB"),
-                ("MEMORY TOTAL", sample.MemoryTotalGiB, " GiB"),
-                ("MEMORY PRESSURE", sample.MemoryPressure, "")
+                ("MEMORY TOTAL", sample.MemoryTotalGiB, " GiB")
             })
             {
                 text.AppendLine();

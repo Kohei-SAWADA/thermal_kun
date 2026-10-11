@@ -15,7 +15,7 @@ macOS 13以降。配布アプリはApple Silicon専用で、Intel Macは非対�
 
 ## Windows版プレビュー
 
-[Windows x64 0.1.3のダウンロード・導入・ビルド案内](Windows/README.md)。Windows版ではTHERMAL STATUS欄を表示しません。CPU温度は同梱の温度取得機能で読み、表示画面は通常権限で動きます。
+[Windows x64 0.1.4のダウンロード・導入・ビルド案内](Windows/README.md)。Windows版ではTHERMAL STATUSとメモリ圧力を表示せず、実測のメモリ使用量を表示します。CPU温度は同梱の温度取得機能で読み、表示画面は通常権限で動きます。
 
 ## デモ
 

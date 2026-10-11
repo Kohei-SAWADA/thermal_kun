@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3-temperature-preview",
+  "version": "0.1.4-temperature-preview",
   "buildHost": "Windows x64",
   "sdk": "10.0.112",
   "runtime": "10.0.12",

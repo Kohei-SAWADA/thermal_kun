@@ -15,7 +15,7 @@ macOS 13+; the release app is Apple Silicon only and does not support Intel Macs
 
 ## Windows preview
 
-[Windows x64 0.1.3: download, setup and build instructions](Windows/README.md). The Windows panel omits THERMAL STATUS. CPU temperature uses an optional bundled reader; the display runs with ordinary user privileges.
+[Windows x64 0.1.4: download, setup and build instructions](Windows/README.md). The Windows panel omits THERMAL STATUS and memory pressure; measured memory usage remains visible. CPU temperature uses an optional bundled reader; the display runs with ordinary user privileges.
 
 ## Demo
 
