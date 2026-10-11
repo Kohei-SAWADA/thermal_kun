@@ -13,6 +13,10 @@ CPU温度・CPU/GPU使用率・メモリ・最近の温度履歴を、コンパ�
 
 macOS 13以降。配布アプリはApple Silicon専用で、Intel Macは非対応です。アドホック署名・未公証です。
 
+## Windows版プレビュー
+
+[Windows x64 0.1.3のダウンロード・導入・ビルド案内](Windows/README.md)。Windows版ではTHERMAL STATUS欄を表示しません。CPU温度は同梱の温度取得機能で読み、表示画面は通常権限で動きます。
+
 ## デモ
 
 ![thermal kunの実測値と表示切替の実操作](assets/promo/thermal-kun-demo.gif)

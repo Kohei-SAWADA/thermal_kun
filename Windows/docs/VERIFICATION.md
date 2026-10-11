@@ -1,0 +1,13 @@
+# Windows verification
+
+This work is performed on Windows 11 Home x64 / Intel Core i5-8250U. No Mac is used for this update.
+
+0.1.3 (2026-10-11): Release x64 self-contained publish passed with no compiler warnings or errors; 194 existing core checks, 12 temperature boundary checks, and real Windows named-pipe regression checks passed. Automated checks alone do not prove native GUI or hardware behavior.
+
+The installed 0.1.3 ordinary-privilege GUI was verified on this PC, with the existing PawnIO driver and a separately approved administrator CPU reader. Real application screenshots verified compact/detail and dark/light modes, growing CPU history and peak, and absence of THERMAL STATUS in the panel. The settings sensor-source list also omits THERMAL STATUS. Temperature, CPU load, GPU load and memory values changed across samples; observed CPU package temperatures included 44, 61, 67 and 70 degrees Celsius. These are application screen readings, not a calibration claim. The larger graph uses the space freed by the removed section. A real dark-mode screen capture is included in assets/windows-preview.jpg.
+
+0.1.3 normal Quit was verified with independent process handles: both the GUI and administrator reader exited with code 0. The startup logs recorded dispatcher exit, controller disposal and normal reader exit with no exception. Relaunch created the main window and entered the WPF dispatcher. Tray restoration has not been repeated on 0.1.3; its earlier verification is described below.
+
+0.1.2: ordinary-privilege GUI, real CPU temperature and load updates, quit/restart, secondary-launch activation, and normal exit codes for both GUI and elevated reader were verified. Expected pipe disconnection no longer records an exception. 0.1.1 additionally verified compact/detail, light/dark, history/peak and tray double-click restoration on this same PC.
+
+Unverified: other PCs, Windows ARM64, Windows 10, multiple monitors, other DPI settings, physical sleep/resume, temperature calibration against an external instrument, actual login-cycle startup behavior and public SmartScreen reputation. No driver reinstallation, OS restart/logout, security changes or startup registration is performed for this update. The new UI omits THERMAL STATUS; macOS-style memory pressure remains unsupported.

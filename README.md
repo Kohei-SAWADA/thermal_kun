@@ -13,6 +13,10 @@ Keep CPU temperature, CPU/GPU usage, memory, and recent temperature history visi
 
 macOS 13+; the release app is Apple Silicon only and does not support Intel Macs. Ad-hoc signed and not notarized.
 
+## Windows preview
+
+[Windows x64 0.1.3: download, setup and build instructions](Windows/README.md). The Windows panel omits THERMAL STATUS. CPU temperature uses an optional bundled reader; the display runs with ordinary user privileges.
+
 ## Demo
 
 ![Live thermal kun readings and actual display controls](assets/promo/thermal-kun-demo.gif)
